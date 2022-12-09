@@ -10,7 +10,7 @@ namespace LogicalProgramming
             while (flag)
             {
                 Console.WriteLine("Welcome to Logical Programming Problems");
-                Console.WriteLine("1. Fibonaccis Series" + "\n" + "2. Perfect Number" + "\n" + "3. Prime Number" + "\n" + "4. Reverse Number" + "\n" + "5. Exit");
+                Console.WriteLine("1. Fibonacci Series" + "\n" + "2. Perfect Number" + "\n" + "3. Prime Number" + "\n" + "4. Reverse Number" + "\n" + "5. Coupon Number" + "\n" + "6. Exit");
                 int check = Convert.ToInt32(Console.ReadLine());
                 switch (check)
                 {
@@ -29,6 +29,10 @@ namespace LogicalProgramming
                     case 4:
                         ReverseNumber reverseNumber = new ReverseNumber();
                         reverseNumber.Reverse();
+                        break;
+                    case 5:
+                        CouponNumber couponNumber = new CouponNumber();
+                        couponNumber.Coupon();
                         break;
                     default:
                         flag = false;
